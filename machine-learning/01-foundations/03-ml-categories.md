@@ -2,6 +2,8 @@
 
 ## Related Fields
 
+![categ](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/01-categories.png)
+
 ### Computer Science
 
 encompasses everything related to the design, development, and use of computers.
@@ -35,3 +37,5 @@ Artificial intelligence includes several important subfields:
 Subset of AI that enables systems to learn from data and improve performance without being explicitly programmed.
 
 Instead of hardcoding rules, machine learning models identify patterns in data and use them to make predictions or decisions.
+
+![categ1](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/01-categories1.png)
