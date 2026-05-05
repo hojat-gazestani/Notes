@@ -20,7 +20,7 @@ Artificial intelligence is the ability of machines to perform tasks that typical
 
 ---
 
-## AI Subfields
+#### AI Subfields
 
 Artificial intelligence includes several important subfields:
 
@@ -39,3 +39,13 @@ Subset of AI that enables systems to learn from data and improve performance wit
 Instead of hardcoding rules, machine learning models identify patterns in data and use them to make predictions or decisions.
 
 ![categ1](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/01-categories1.png)
+
+
+####  ML Subfields
++ Deep Learning (subset of ML using neural networks with many layers)
+  + CNN (a specific architecture of deep learning)
+    + Image classification – “Is this a cat or a dog?”
+    + Object detection – “Find all cars in this photo”
+    + Medical imaging – “Detect pneumonia in X-rays”
+    + Facial recognition
+    + Image segmentation – “Outline every pedestrian”
