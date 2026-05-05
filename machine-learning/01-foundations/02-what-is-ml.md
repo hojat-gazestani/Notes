@@ -43,7 +43,7 @@ Instead of hardcoding rules, machine learning models identify patterns in data a
 
 ####  ML Subfields
 + Deep Learning (subset of ML using neural networks with many layers)
-  + CNN (a specific architecture of deep learning)
+  + CNN (Convolutional Neural Network, a specific architecture of deep learning)
     + Image classification – “Is this a cat or a dog?”
     + Object detection – “Find all cars in this photo”
     + Medical imaging – “Detect pneumonia in X-rays”
