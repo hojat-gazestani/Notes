@@ -58,7 +58,7 @@ Retrieval – searching for relevant information from an external knowledge sour
 
 Generation – using an LLM to produce an answer grounded in the retrieved information
 
-Why RAG matters
+##### Why RAG matters
 
 | Problem without RAG | Solution with RAG |
 |---------------------|-------------------|
@@ -67,7 +67,7 @@ Why RAG matters
 | Can't cite sources | Can show where the answer came from |
 | No access to your internal company docs | Can query your own knowledge base |
 
-Simple example
+##### Simple example
 Without RAG – You ask an LLM: "What did my team discuss in yesterday's meeting?"
 → LLM has no idea (wasn't trained on your private meeting notes)
 
@@ -78,6 +78,8 @@ System retrieves relevant meeting notes from your company's database
 LLM generates an answer based only on those retrieved notes
 
 Answer is accurate and can cite the specific document
+
+```text
 
 User Question: "What is the return policy?"
          │
@@ -99,13 +101,22 @@ User Question: "What is the return policy?"
          │
          ▼
    "Our return policy allows 30 days..." (citing source doc)
+```
 
-Common use cases
+##### Common use cases
 
-Chat with your PDFs/Documents – customer support, legal, HR
+**Chat with your PDFs/Documents:** customer support, legal, HR
 
-Enterprise Q&A – answer questions using internal wikis, Slack, emails
+**Enterprise Q&A:** answer questions using internal wikis, Slack, emails
 
-Medical assistants – retrieve from latest research papers
+**Medical assistants:** retrieve from latest research papers
 
-Coding assistants – retrieve from your private codebase
+**Coding assistants:** retrieve from your private codebase
+
+#### LangChain
+
+Its core philosophy is built around chains—sequences of operations that can be linked together. You can think of a chain as a specific workflow, such as "retrieve relevant documents, then pass them to an LLM to generate an answer" (which is exactly what RAG does) .
+
+Beyond RAG, LangChain allows you to build agents. While a chain follows a fixed sequence, an agent uses the LLM to decide what actions to take next (e.g., "Should I search a database, perform a calculation, or just answer directly?") .
+
+One of LangChain's biggest strengths is its massive ecosystem of integrations . It provides standard interfaces for hundreds of different components, allowing you to easily swap them in and out of your application.
