@@ -193,6 +193,49 @@ multiple languages
 توکن it با انجام عملیات ریاضی ارتباط با animal را ....
 ```
 
+*Recurrent Neural Networks (RNNs)*
+طراحی شدن برای داده های متوالی ،‌مثلا:
+I grew up in France, so I speak fluent ___
+مدل باید Franch رو یادش بمونه که بتونه در ادامه پیش بینی که Franch
+
+Long Short-Term Memory network LSTMs
+ایجاد شدن که مشکل مدل های قبلی که داشتن حافظه بلند مدت بود رو حل کنن
+
+*Transformers*
+این نوع مدل ها جایگزین مدل های قبلی شدن
+در این مدل ها کلمات کلمه به کلمه پردازش نمیشن و تبدیل به کلمات کوچیکتری به نام *tokens* میشن و بعد پردازش میشن.
+
+"Transformers are powerful"
+["Transform", "ers", " are", " powerful"]
+یا
+["Transformers", "are", "powerful"]
+بر اساس نوع توکن سازی 
+
+نوع دوم
+"unhappiness"
+→ ["un", "happi", "ness"]
+
+
+به دلایل زیر از توکن استفاده میکنیم
+millions of words
+typos
+rare words
+multiple languages
+که اجازه میده مدل های کارآمد تری که دارای بلاک هایی با قابلیت استفاده مجدد هستن بسازیم
+
+مثلا توکن زیر
+"walking"
+"walked"
+"walker"
+میتونه از توکن مشترک "walk" استفاده کنه
+
+
+*Tokens in Self-Attention
+*هر توکن خودش رو با بقیه توکن ها مقایسه میکنه برای درک بهتر
+"The animal didn't cross the street because it was tired."
+توکن it با انجام عملیات ریاضی ارتباط با animal را ....
+
+
 What is Transformer Model?
  It is a device that transfers electric energy from one cyrcle to another cyrcle.
 
@@ -250,6 +293,7 @@ Neural Network Layers
  ↓
 Prediction
 
+<<<<<<< HEAD
 
 در حقیقت LLM ها کلمات رو نمی بینند و فقط عناصر زیر را متوجه می شوند.
 
@@ -258,6 +302,11 @@ tokens
 embeddings (numbers)
 relationships between embeddings
 ```
+در حقیقت LLM ها کلمات رو نمی بینند و فقط عناصر زیر را متوجه می شوند.
+tokens
+embeddings (numbers)
+relationships between embeddings
+
 An embedding is a way of <u>converting</u> the <u>features</u> of an object, like a <u>word</u>, into <u>vectore</u> of real numbers.
 ![Embedding](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/08-embedding.png)
 
