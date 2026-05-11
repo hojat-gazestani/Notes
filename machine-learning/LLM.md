@@ -328,19 +328,6 @@ Context length
 ![Screenshot 1404-10-28 at 12.42.14 AM](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/11-context-lenght.png)
 
 
-
-explain
-
-![Screenshot 1404-10-28 at 12.42.47 AM](/Users/hojat/Pictures/ScreenShot/Screenshot 1404-10-28 at 12.42.47 AM.png)
-
-
-
-
-
-
-
-
-
 ### Why it's important?
 
 **Short Context Length:** Works well for simple or short tasks (e.g. completing a sentence)
