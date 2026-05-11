@@ -290,7 +290,8 @@ Quantization is a process of reducing the precision of numbers used to represent
 
 Quantization in AI reduces number precision to make models smaller and faster, with minimal impact on accuracy.
 
-Example: Comressing High Quality image to Smaller size.![Screenshot 1404-10-28 at 12.32.50 AM](/Users/hojat/Pictures/ScreenShot/Screenshot 1404-10-28 at 12.32.50 AM.png)
+Example: Comressing High Quality image to Smaller size.!
+[Screenshot 1404-10-28 at 12.32.50 AM](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/09-quntiaization.png)
 
 
 
@@ -318,13 +319,13 @@ Context lenght refers to the maximum amount of text (tokens) that the model can 
 
 Click on **model card on Github**
 
-![Screenshot 1404-10-28 at 12.41.18 AM](/Users/hojat/Pictures/ScreenShot/Screenshot 1404-10-28 at 12.41.18 AM.png)
+![Screenshot 1404-10-28 at 12.41.18 AM](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/10-git.png)
 
 
 
 Context length
 
-![Screenshot 1404-10-28 at 12.42.14 AM](/Users/hojat/Pictures/ScreenShot/Screenshot 1404-10-28 at 12.42.14 AM.png)
+![Screenshot 1404-10-28 at 12.42.14 AM](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/11-context-lenght.png)
 
 
 
