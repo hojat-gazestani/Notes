@@ -149,6 +149,7 @@ Llama 1B -> Billions of Parameters
 
 
 ## Transformer
+```text
 *Recurrent Neural Networks (RNNs)*
 طراحی شدن برای داده های متوالی ،‌مثلا:
 I grew up in France, so I speak fluent ___
@@ -190,7 +191,7 @@ multiple languages
 *هر توکن خودش رو با بقیه توکن ها مقایسه میکنه برای درک بهتر
 "The animal didn't cross the street because it was tired."
 توکن it با انجام عملیات ریاضی ارتباط با animal را ....
-
+```
 
 What is Transformer Model?
  It is a device that transfers electric energy from one cyrcle to another cyrcle.
@@ -224,6 +225,7 @@ Context:
 
 
 ## Embedding
+```text
 
 *Tokens Become Vectors*
 بعد از توکن سازی هر توکن تبدیل به یک بردار عددی به نام embedding می شود.
@@ -248,11 +250,14 @@ Neural Network Layers
  ↓
 Prediction
 
+
 در حقیقت LLM ها کلمات رو نمی بینند و فقط عناصر زیر را متوجه می شوند.
+
+
 tokens
 embeddings (numbers)
 relationships between embeddings
-
+```
 An embedding is a way of <u>converting</u> the <u>features</u> of an object, like a <u>word</u>, into <u>vectore</u> of real numbers.
 ![Embedding](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/08-embedding.png)
 
