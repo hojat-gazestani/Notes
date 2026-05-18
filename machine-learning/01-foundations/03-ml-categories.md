@@ -88,3 +88,87 @@ Instead of labeled data, the system learns from **trial and error**.
 
 * Learns optimal actions within an environment
 * Uses states, actions, and rewards
+
+
+```text
+Computer Science
+├── Artificial Intelligence
+├── Data Science
+├── Software Engineering
+├── Networks
+└── Databases
+
+Computer Science
+├── Artificial Intelligence
+│   ├── Machine Learning
+│   │   └── Deep Learning
+│   │       ├── CNNs
+│   │       └── Transformers
+│   ├── NLP
+│   ├── Computer Vision
+│   └── Robotics
+└── Data Science
+
+AI
+└── Machine Learning
+    └── Deep Learning
+        ├── CNNs  → images
+        ├── Transformers → text/LLMs
+        └── Diffusion → image generation
+       
+# More details
+Computer Science
+└── Artificial Intelligence
+        ├── Machine Learning (ML)
+        │   ├── Deep Learning
+        │   │   ├── CNN (Convolutional Neural Networks)
+        │   │   │   ├── Image Classification
+        │   │   │   ├── Object Detection
+        │   │   │   ├── Medical Imaging
+        │   │   │   ├── Facial Recognition
+        │   │   │   └── Image Segmentation
+        │   │   │
+        │   │   ├── RNNs / LSTMs
+        │   │   ├── Transformers → text/LLMs
+        │   │   └── Diffusion Models → image generation
+        │   │
+        │   ├── Supervised Learning
+        │   ├── Unsupervised Learning
+        │   └── Reinforcement Learning
+        │
+        ├── Natural Language Processing (NLP)
+        │   ├── Text Classification
+        │   ├── Translation
+        │   ├── Summarization
+        │   ├── Question Answering
+        │   └── Information Retrieval
+        │
+        ├── Computer Vision
+        │   ├── Image Classification
+        │   ├── Object Detection
+        │   ├── Segmentation
+        │   └── Facial Recognition
+        │
+        └── Robotics
+
+Large Language Models (LLMs)
+└── Built using:
+  ├── Deep Learning
+  ├── Transformers
+  └── NLP
+
+RAG (Retrieval-Augmented Generation)
+└── An application architecture/pattern on top of LLMs
+
+
+```
+
+
+```text
+
+NLP
+└── Transformers
+    └── LLMs
+        └── RAG applications
+```
+
