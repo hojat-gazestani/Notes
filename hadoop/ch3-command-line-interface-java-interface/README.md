@@ -87,7 +87,7 @@ hdfs://localhost:9000/data/gsom_sample_csv.csv	Size: 1917	Permissions: rw-r--r--
 
 ### Reading Multiple Files with Wildcards
 
-[FileSystemMultiFile.java]() file
+[FileSystemMultiFile.java](https://github.com/hojat-gazestani/Notes/blob/main/hadoop/ch3-command-line-interface-java-interface/FileSystemMultiFile.java) file
 
 ```bash
 root@4d9a04f527bd:/tmp# javac -cp $(hadoop classpath) FileSystemMultiFile.java
