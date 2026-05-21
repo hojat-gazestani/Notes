@@ -2,7 +2,7 @@
 
 Test Java's ability to read from HDFS using URL.openStream() with `hdfs://` protocol.
 
-URLCat.java Example
+[URLCat.java](https://github.com/hojat-gazestani/Notes/blob/main/hadoop/ch3-command-line-interface-java-interface/URLCat.java) Example
 
 ## Running Inside Container
 ```bash
