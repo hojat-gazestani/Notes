@@ -68,10 +68,19 @@ Hello from Java HDFS client
 
 ### Seeking and Reading Specific Portions:
 
-[FileSystemSeek.java]() file
+[FileSystemSeek.java](https://github.com/hojat-gazestani/Notes/blob/main/hadoop/ch3-command-line-interface-java-interface/FileSystemSeek.java) file
 ```bash
 javac -cp $(hadoop classpath) FileSystemSeek.java
 java -cp $(hadoop classpath):. FileSystemSeek hdfs://localhost:9000/data/gsom_sample_csv.csv
 STATION,NAD,CLD
 File length: 55
+```
+### Listing Directory Contents
+
+[FileSystemList]() file
+
+```bash
+root@4d9a04f527bd:/tmp# javac -cp $(hadoop classpath) FileSystemList.java
+root@4d9a04f527bd:/tmp# java -cp $(hadoop classpath):. FileSystemList hdfs://localhost:9000/data/
+hdfs://localhost:9000/data/gsom_sample_csv.csv	Size: 1917	Permissions: rw-r--r--	IsDir: false
 ```
