@@ -41,6 +41,14 @@ Instead of hardcoding rules, machine learning models identify patterns in data a
 ![categ1](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/01-categories1.png)
 
 
+
+
+## Deep Learning
++ Subset of ML which make the computation of multi-layer neural network feasible.
++ ML techniques that teaches computers to process data in way that is inspired by the human brain.
+
+![AI](https://github.com/hojat-gazestani/Notes/blob/MachineLearning/machine-learning/pic/01-Artificial-intelligence.png)
+
 ####  ML Subfields
 + Deep Learning (subset of ML using neural networks with many layers)
   + CNN (Convolutional Neural Network, a specific architecture of deep learning)
