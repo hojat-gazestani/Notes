@@ -54,4 +54,14 @@ Hello from Java HDFS client
 ```
 
 
-
+| Feature | URL Interface | FileSystem API |
+|---|---|---|
+| Setup complexity | Simple (one-time static registration) | Moderate (need Configuration) |
+| Directory listing | ❌ Not supported | ✅ Full support |
+| File seeking | ❌ Limited | ✅ Full random access (`seek`) |
+| File metadata | ❌ Not available | ✅ Permissions, size, blocks, replication |
+| Wildcards / Glob | ❌ No | ✅ Yes (`globStatus`) |
+| Create / Write files | ❌ Read-only | ✅ Full read/write |
+| Delete / Move files | ❌ No | ✅ Full file operations |
+| Performance | Good for sequential read | Excellent with seek and positioning |
+| Best for | Simple file reading, legacy Java code | Production applications needing full HDFS access |
