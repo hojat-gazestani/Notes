@@ -167,7 +167,6 @@ Neural Network Layers
  ↓
 Prediction
 
-<<<<<<< HEAD
 
 در حقیقت LLM ها کلمات رو نمی بینند و فقط عناصر زیر را متوجه می شوند.
 
@@ -175,11 +174,23 @@ Prediction
 tokens
 embeddings (numbers)
 relationships between embeddings
+در حقیقت LLM ها کلمات رو نمی بینند و فقط عناصر زیر را متوجه می شوند.
+tokens
+embeddings (numbers)
+relationships between embeddings
+
 ```
-در حقیقت LLM ها کلمات رو نمی بینند و فقط عناصر زیر را متوجه می شوند.
-tokens
-embeddings (numbers)
-relationships between embeddings
+Labeled data in a tabular dataset that contain row and columns.
+![page 22 - labeld data]()
+
+vectors store X and y values and multiple vectors(comumns)
+![page23-1-vectors]()
+
+In supervisored learning, y will already exist in your dataset and be used to identify patterns in relation to independent variable X.
+![page24-1-matrix]()
+
+the scatterplot represent one observation from the dataset.
+![page24-2-scatterplot]()
 
 An embedding is a way of <u>converting</u> the <u>features</u> of an object, like a <u>word</u>, into <u>vectore</u> of real numbers.
 ![Embedding](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/08-embedding.png)
@@ -207,7 +218,7 @@ Quantization is a process of reducing the precision of numbers used to represent
 Quantization in AI reduces number precision to make models smaller and faster, with minimal impact on accuracy.
 
 Example: Comressing High Quality image to Smaller size.!
-[Screenshot 1404-10-28 at 12.32.50 AM](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/09-quntiaization.png)
+![Screenshot 1404-10-28 at 12.32.50 AM](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/09-quntiaization.png)
 
 
 
