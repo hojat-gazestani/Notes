@@ -65,3 +65,13 @@ Hello from Java HDFS client
 | Delete / Move files | ❌ No | ✅ Full file operations |
 | Performance | Good for sequential read | Excellent with seek and positioning |
 | Best for | Simple file reading, legacy Java code | Production applications needing full HDFS access |
+
+### Seeking and Reading Specific Portions:
+
+[FileSystemSeek.java]() file
+```bash
+javac -cp $(hadoop classpath) FileSystemSeek.java
+java -cp $(hadoop classpath):. FileSystemSeek hdfs://localhost:9000/data/gsom_sample_csv.csv
+STATION,NAD,CLD
+File length: 55
+```
