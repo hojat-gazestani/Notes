@@ -181,16 +181,16 @@ relationships between embeddings
 
 ```
 Labeled data in a tabular dataset that contain row and columns.
-![page 22 - labeld data]()
+![page 22 - labeld data](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-llm-transformers/page22-labeld-tabular.png)
 
 vectors store X and y values and multiple vectors(comumns)
-![page23-1-vectors]()
+![page23-1-vectors](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-llm-transformers/page23-vectors.png)
 
 In supervisored learning, y will already exist in your dataset and be used to identify patterns in relation to independent variable X.
-![page24-1-matrix]()
+![page24-1-matrix](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-llm-transformers/page24-1-matrix.png)
 
 the scatterplot represent one observation from the dataset.
-![page24-2-scatterplot]()
+![page24-2-scatterplot](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-llm-transformers/page24-2-scatterple.png)
 
 An embedding is a way of <u>converting</u> the <u>features</u> of an object, like a <u>word</u>, into <u>vectore</u> of real numbers.
 ![Embedding](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/08-embedding.png)
