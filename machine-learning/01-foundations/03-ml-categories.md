@@ -129,7 +129,14 @@ Computer Science
         │   │   │   └── Image Segmentation
         │   │   │
         │   │   ├── RNNs / LSTMs
-        │   │   ├── Transformers → text/LLMs
+        │   │   ├── Transformers (test/LLM usage via ChatOpenAI)
+        │   │   │       └── LLM Applications
+        │   │   │            ├── RAG (Retrieval-Augmented Generation)  ← YOUR PROJECT
+        │   │   │            │   ├── Document Loader (TextLoader)
+        │   │   │            │   ├── Chunking (RecursiveCharacterTextSplitter)
+        │   │   │            │   ├── Embeddings (HuggingFaceEmbeddings)
+        │   │   │            │   ├── Vector DB (Chroma)
+        │   │   │            │   └── Retriever + Prompt + LLM Chain (LangChain)
         │   │   └── Diffusion Models → image generation
         │   │
         │   ├── Supervised Learning
