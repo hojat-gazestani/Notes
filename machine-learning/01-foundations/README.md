@@ -4,3 +4,6 @@
 
 ## 02-CNN-theory
 [CNN theory](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/CNN)
+
+## RAG-ChatBot
+[RAG ChatBot](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/rag-systems)
