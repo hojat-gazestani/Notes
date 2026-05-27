@@ -1,6 +1,6 @@
 # Convolutional Neural Networks (CNNs)
 
-![CNN](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/0_vuja0HL-oTjAZVPW.webp)
+![CNN](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/01-header.webp)
 
 
 Use CNN to process structured grid data (e.g images) to capture patterns (edge, texture, shape) in the data.
@@ -40,13 +40,13 @@ Learnable filters (kernel) slides over image and compute the dot product between
 
 The below gif shows how convolution Kernel slides over the images.
 
-![kernel](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/0_9y3bJ3EXof_KKTsj.gif)
+![kernel](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/03-kernel-slide.gif)
 
 Kernel is a small filter (3x 3, 5x 5 matrix) in deep network (like VGG, ResNet) because they preserve spatial locality and require fewer parameter.
 
 The 3x 3, 5x 5 balance computation and feature extraction.
 
-![Convolutional](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/1_SkVkik3WAPJ2aqFJZ_el4w.webp)
+![Convolutional](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/02-kernel.webp)
 
 + Input: Your image, big grid of numbers (6x 6)
 + Kernel: Green convolution kernel, the smaller grid (3x 3)
@@ -55,7 +55,7 @@ The 3x 3, 5x 5 balance computation and feature extraction.
 
 ### Padding
 
-![padding](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/0_lLW_v6lWDC5C_txJ.gif)
+![padding](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/04-padding.gif)
 
 #### Types of Padding
 
