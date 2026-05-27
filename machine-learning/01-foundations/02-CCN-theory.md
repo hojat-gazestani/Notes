@@ -22,15 +22,19 @@ Learnable filters (kernel) slides over image and compute the dot product between
 
 + Uses small filters - kernel (e.g., 2×2, 3×3, 5×5) to scan the input image.
 
+The below gif shows how convolution Kernel slides over the images.
+
 ![kernel](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/0_9y3bJ3EXof_KKTsj.gif)
 
+Kernel is a small filter (3x 3, 5x 5 matrix) in deep network (like VGG, ResNet) because they preserve spatial locality and require fewer parameter.
 
+The 3x 3, 5x 5 balance computation and feature extraction.
 
 ![Convolutional](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/1_SkVkik3WAPJ2aqFJZ_el4w.webp)
 
-+ Input
-+ Kernel:
-+ Output:
++ Input: Your image, big grid of numbers (6x 6)
++ Kernel: Green convolution kernel, the smaller grid (3x 3)
++ Output: Result after convolution, the smaller grid (4x 4)
 
 
 ### Padding
