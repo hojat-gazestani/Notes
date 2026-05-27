@@ -2,6 +2,10 @@
 
 ![CNN](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/01-header.webp)
 
+## CNN Processing Pipeline
+
+Use CNN to process structured grid data (e.g images) to capture patterns (edge, texture, shape) in the data.
+
 ```text
 CNN
 ├── Input
@@ -16,46 +20,31 @@ CNN
 └── Output
 ```
 
-Use CNN to process structured grid data (e.g images) to capture patterns (edge, texture, shape) in the data.
-
-**CNN Processing Pipeline**
-1. Input layer
+1. **Input layer**
     + Image enters the network
     + Example: `128 × 128 × 3`
-2. Convolutional Block(s)
+2. **Convolutional Block(s)**
     Each block contain
-    + Convolution Operation
+    + **Convolution Operation**
         + Filters / kernels
-        + Stride
-        + Padding
-    + Activation
-        + Usually ReLU
-    + Normalization Layer (optional but common)
+        + **Stride**
+        + **Padding**
+    + **Activation**
+        + Usually **ReLU**
+    + **Normalization Layer** (optional but common)
         + Batch Normalization
         + Layer Normalization
-    + Pooling
+    + **Pooling**
         + Max Pooling / Average Pooling
-    + Dropout Layer (optional, training only)
-3. Flattening
+    + **Dropout Layer** (optional, training only)
+3. **Flatten layer**
     Converts 2D feature maps into a 1D vector
-6. Dense (Fully Connected) Layer(s)
+6. **Dense (Fully Connected) Layer(s)**
     Learns high-level patterns for classification
-7. Output Layer
+7. **Output Layer**
     Usually:
-        + Softmax → multi-class classification
-        + Sigmoid → binary classification
-
-
-**Convolution Operation**
-+ Padding
-+ Stride
-+ Pooling
-+ Activation Function (ReLU)
-+ Normalization Layer (Batch Normalization or Layer Normalization)
-+ Dropout Layer (Optional, During Training Only)
-+ Flatten Layer
-+ Dense (Fully Connected) Layer
-+ Softmax Activation Function Layer
+        + **Softmax:** multi-class classification
+        + **Sigmoid:** binary classification
 
 
 ## 1. Input Layer
