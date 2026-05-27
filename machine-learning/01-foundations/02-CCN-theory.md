@@ -1,6 +1,6 @@
 # Convolutional Neural Networks (CNNs)
 
-![]()
+![CNN](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/0_vuja0HL-oTjAZVPW.webp)
 
 ## Input Layer
 
@@ -13,7 +13,7 @@
 
 ### Padding
 
-![padding]()
+![padding](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/0_lLW_v6lWDC5C_txJ.gif)
 
 #### Types of Padding
 
