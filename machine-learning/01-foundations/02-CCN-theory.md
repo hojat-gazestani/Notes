@@ -2,17 +2,48 @@
 
 ![CNN](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/01-header.webp)
 
+```text
+CNN
+├── Input
+├── Feature Extraction
+│   ├── Convolution
+│   ├── ReLU
+│   ├── Normalization
+│   ├── Pooling
+│   └── Dropout
+├── Flatten
+├── Fully Connected Layers
+└── Output
+```
 
 Use CNN to process structured grid data (e.g images) to capture patterns (edge, texture, shape) in the data.
 
-**Steps**
-1. Input Layer
-2. Convolutional Layer
-3. Activation Layer
-4. Pooling Layer
-5. Flattening
-6. Fully Connected Layer
+**CNN Processing Pipeline**
+1. Input layer
+    + Image enters the network
+    + Example: `128 × 128 × 3`
+2. Convolutional Block(s)
+    Each block contain
+    + Convolution Operation
+        + Filters / kernels
+        + Stride
+        + Padding
+    + Activation
+        + Usually ReLU
+    + Normalization Layer (optional but common)
+        + Batch Normalization
+        + Layer Normalization
+    + Pooling
+        + Max Pooling / Average Pooling
+    + Dropout Layer (optional, training only)
+3. Flattening
+    Converts 2D feature maps into a 1D vector
+6. Dense (Fully Connected) Layer(s)
+    Learns high-level patterns for classification
 7. Output Layer
+    Usually:
+        + Softmax → multi-class classification
+        + Sigmoid → binary classification
 
 
 **Convolution Operation**
