@@ -5,7 +5,7 @@
 
 Use CNN to process structured grid data (e.g images) to capture patterns (edge, texture, shape) in the data.
 
-*Key Components*
+**Key Components**
 + Convolutional layer
 + padding
 + stride
