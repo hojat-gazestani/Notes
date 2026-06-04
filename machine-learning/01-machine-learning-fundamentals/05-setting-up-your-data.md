@@ -8,7 +8,7 @@ Test your model with the same data that you used for training. 70/30 or 80/20.
 
 It is vital to split your data by rows and not columns.
 
-![Training and testing](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/01-foundations/pics/06-setting-up-data/Figure-1-Training-and-test-partitioning-.png)
+![Training and testing](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pics/06-setting-up-data/Figure-1-Training-and-test-partitioning-.png)
 
 Before spliting your data,randomize all rows in the dataset to  avoid bias in your model.
 
@@ -33,7 +33,7 @@ maximizes the availability of training data by splitting data into various combi
 **exhaustive cross validation:** involves finding and testing all possible combinations to divide the original sample into a training set and a test set. 
 **non-exhaustive cross validation, known as k-fold validation:** k assigned buckets and reserving one of those buckets to test the training model at each round. One bucket is then reserved as the test bucket and is used to measure and evaluate the performance of the remaining (k-1) buckets.
 
-![cross valication](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/01-foundations/pics/06-setting-up-data/Figure-2-k-fold-validation.png)
+![cross valication](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pics/06-setting-up-data/Figure-2-k-fold-validation.png)
 
 ### How Much Data Do I Need?
 
