@@ -13,7 +13,7 @@
 + data should be free of missing values 
 + all variables are independent of each other. 
 
-![logistic](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/01-foundations/pics/08-Logistic-Regression/Figure-6%3A-An-example-of-logistic-regression.png)
+![logistic](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pics/08-Logistic-Regression/Figure-6%3A-An-example-of-logistic-regression.png)
 
 **Use case**
 
@@ -26,9 +26,9 @@
 **sigmoid function:**  produces an S-shaped curve that can convert any number and map it into a numerical value between 0 and 1
 +  convert numerical results into an expression of probability between 0 and 1
 
-![sigmoid](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/01-foundations/pics/08-Logistic-Regression/Figure-7%3A-A-sigmoid-function-used-to-classify-data-points.png)
+![sigmoid](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pics/08-Logistic-Regression/Figure-7%3A-A-sigmoid-function-used-to-classify-data-points.png)
 
 **multinomial logistic regression:** Logistic regression with more than two outcome values
 
-![mulinoial](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/01-foundations/pics/08-Logistic-Regression/Figure-8%3A-An-example-of-multinomial-logistic-regression.png)
+![mulinoial](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pics/08-Logistic-Regression/Figure-8%3A-An-example-of-multinomial-logistic-regression.png)
 
