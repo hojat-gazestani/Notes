@@ -9,15 +9,27 @@
   * [03-ml-toolbox.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/01-machine-learning-fundamentals/03-ml-toolbox.md)
   * [04-data-scrubbing.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/01-machine-learning-fundamentals/04-data-scrubbing.md)
   * [05-setting-up-your-data.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/01-machine-learning-fundamentals/05-setting-up-your-data.md)
+  * [06-bias-and-variance.md]()
   * Labs
 
     * (to be added)
 
 * Chapter 2 - Classical Machine Learning
-
-  * [01-regression-analysis.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/01-regression-analysis.md)
-  * [02-logistic-regression.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/02-logistic-regression.md)
-  * [03-support-vector-machines.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/03-support-vector-machines.md)
+  * Regression
+    * [01-regression-analysis.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/01-regression-analysis.md)
+    * [02-logistic-regression.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/02-logistic-regression.md)
+  * Support Vector Machines
+    * [03-support-vector-machines.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/03-support-vector-machines.md)
+  * Instance-Based Learning
+    * 04-k-nearest-neighbors.md
+  * Clustering
+    * 05-clustering-introduction.md
+    * 06-k-means-clustering.md
+    * 07-setting-k.md
+  * Decision Trees & Ensembles
+    * 08-decision-trees.md
+    * 09-building-a-decision-tree.md
+    * 10-boosting.md
   * Labs
 
     * (to be added)
