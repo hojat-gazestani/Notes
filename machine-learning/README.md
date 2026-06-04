@@ -68,7 +68,7 @@
   * [03-rag-langgraph.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/03-rag-langgraph.md)
   * Labs
 
-    * [Sentiment Analysis](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/sentiment-analysis)
+    * [Sentiment Analysis](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/sentiment-analysis) -> 01-transformers-and-llms.md
     * [RAG Chatbot](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/rag-systems/rag_chatbot) -> 02-1-langchian-Expression-Language-LCEL.md
     * [decomposition](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/rag-systems/decomposition)
 
