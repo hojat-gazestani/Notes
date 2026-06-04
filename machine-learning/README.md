@@ -44,10 +44,9 @@
 * Chapter 5 - Natural Language Processing (RAG)
 
   * [01-transformers-and-llms.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/01-transformers-and-llms.md)
-  * 02-tokenization.md
-  * 03-embeddings.md
-  * 04-attention-mechanism.md
-  * 05-rag.md
+  * [02-0-rag-langchian.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/02-0-rag-langchian.md)
+  * [02-1-langchian-Expression-Language-LCEL.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/02-1-langchian-Expression-Language-LCEL.md)
+  * [03-rag-langgraph.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/03-rag-langgraph.md)
   * Labs
 
     * [Sentiment Analysis](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/sentiment-analysis)
