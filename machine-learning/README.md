@@ -29,7 +29,7 @@
       * boosting
   * Unsupervised Learning
     * [05-clustering-introduction.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/05-clustering-introduction.md)
-    * 06-k-means-clustering.md
+    * [06-k-means-clustering.md](https://github.com/hojat-gazestani77/Notes/blob/main/machine-learning/02-classical-machine-learning/06-k-means-clustering.md)
     * 07-setting-k.md
   * Labs
 
