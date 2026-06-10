@@ -21,7 +21,7 @@
     * Classification
       * [02-logistic-regression.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/02-logistic-regression.md)
       * [03-support-vector-machines.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/03-support-vector-machines.md)
-      * k-nearest-neighbors
+      * [04-k-nearest-neighbors.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/04-k-nearest-neighbors.md)
       * decision-trees
         * decision-trees
         * building-a-decision-tree
