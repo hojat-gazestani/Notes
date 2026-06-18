@@ -24,6 +24,7 @@ It is calculated by:
 3. Adding up all those squared distances across **all** clusters.
 
 **Formula:**
+
 WCSS = Σᵢ₌₁ᵏ Σ_{x ∈ Cᵢ} distance(x, centroidᵢ)²
 
 
