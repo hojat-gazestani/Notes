@@ -73,7 +73,7 @@
     * [Sentiment Analysis](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/sentiment-analysis) -> 01-transformers-and-llms.md
     * [RAG Chatbot](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/rag-systems/rag_chatbot) -> 02-1-langchian-Expression-Language-LCEL.md
     * [decomposition](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/rag-systems/decomposition)
-    * [Multi-Query Retrieval]()
+    * [Multi-Query Retrieval](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/rag-systems/multi-query-retrieval) -> 05-natural-language-processing/04-multi-query-retrieval.md
 
 * Chapter 7 - MLOps
 
