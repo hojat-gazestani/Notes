@@ -67,7 +67,7 @@
   * [02-1-langchian-Expression-Language-LCEL.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/02-1-langchian-Expression-Language-LCEL.md)
   * [03-rag-langgraph.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/03-rag-langgraph.md)
   * Advanced RAG Techniques & Strategies
-    * [Multi-Query Retrieval]()
+    * [05-natural-language-processing/04-multi-query-retrieval.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/04-multi-query-retrieval.md)
   * Labs
 
     * [Sentiment Analysis](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/sentiment-analysis) -> 01-transformers-and-llms.md

@@ -1,19 +1,67 @@
 # Multi-Query Retrieval
 
+Multi-Query Retrieval is a retrieval strategy that improves document retrieval by asking an LLM to generate several alternative versions of the user's question.
+
+Instead of searching the vector database once, we search it multiple times using different phrasings of the same question. The retrieved documents are merged, duplicates are removed, and the final set of documents is used to generate the answer.
+
+Flow
+
+```text
+User Question
+    │
+    ▼
+Generate Multiple Queries
+    │
+    ▼
+Retrieve Documents for Each Query
+    │
+    ▼
+Remove Duplicates
+    │
+    ▼
+Generate Final Answer
+```
+
+It has two main phases:
+
+* Indexing Phase (offline)
+* Query Phase (online)
+
+```text
+Indexing Phase (offline)
+
+1. Load documents
+2. Split documents
+3. Create embeddings
+4. Build Chroma
+5. Create retriever
+
+-------------------------
+
+Query Phase (online)
+
+6. User asks a question
+7. Generate multiple queries
+8. Retrieve documents
+9. Remove duplicates
+10. Generate answer
+```
+
 ---
 
-Step 1. Create the LLM
+
+## Step 1. Create the LLM
 
 
 ```python
 llm = ChatOpenAI(model="AliBaba/Qwen3.6-27B")
 ```
 
-the `llm` is an object what konws how to call the API
+the `llm` is an object what knows how to call the API
 
 ---
 
-Step 2. Create the prompt
+## Step 2. Create the prompt
 
 ```python
 template = """
@@ -44,14 +92,14 @@ What is RAG?
 
 ---
 
-Step 3. Download the document
+## Step 3. Download the document
 
 ```python
 loader = WebBaseLoader(...)
 blog_docs = loader.load()
 ```
 
-Here we will have the wkipedia page content 
+Here we will have the Wikipedia page content 
 
 ```text
 Wikipedia
@@ -64,7 +112,7 @@ Document
 ```
 
 The `blog_docs` is:
-**Notice:** We an only on `document`
+**Notice:** We currently have only one `document`
 
 ```python
 [
@@ -76,7 +124,7 @@ The `blog_docs` is:
 ```
 ---
 
-Step 4. Split the document
+## Step 4. Split the document
 
 ```python
 splits = text_splitter.split_documents(blog_docs)
@@ -129,7 +177,7 @@ No API call yet, Only an object.
 
 ---
 
-Step 6. Build the vector database
+## Step 6. Build the vector database
 
 
 ```python
@@ -186,7 +234,7 @@ Vector DB
 
 ---
 
-Step 7. Create a retriever
+## Step 7. Create a retriever
 
 ```python
 retriever = vectorstore.as_retriever()
@@ -196,7 +244,7 @@ Here is the retriver object
 
 ---
 
-Step 8. Build the Multi-query chain
+## Step 8. Build the Multi-query chain
 
 ```python
 generate_multi_queries()
@@ -239,18 +287,26 @@ Nothing executes yet.
 
 ---
 
-Step 9. User asks a question
+## Step 9. User asks a question
+
+User asks
 
 ```text
-What is RAG?
+"How do I build a RAG system?"
 ```
+
+The document might instead contain
+
+```text
+
+
 
 The prompt becomes
 
 ```text
 Generate five versions of
 
-"What is RAG?"
+"How do I build a RAG system?"
 ```
 
 The LLM answers
@@ -269,7 +325,7 @@ What are the components of RAG?
 
 ---
 
-Step 10. Parse
+## Step 10. Parse
 
 ```python
 StrOutputParser()
@@ -305,7 +361,7 @@ turns it into
 
 ---
 
-Step 11. Retriever
+## Step 11. Retriever
 
 is the interesting part.
 
@@ -375,7 +431,11 @@ you may retrieve
 
 ---
 
-Step 12. Remove duplicates
+## Step 12. Remove duplicates
+
+Different queries often retrieve the same document because they are semantically similar.
+
+Therefore, we merge the retrieved result and remove duplicates before parsing the documents to the LLM.
 
 ```python
 get_unique_union()
@@ -406,7 +466,7 @@ removes duplicates. Maybe you end up with
 
 ---
 
-Step 13. Generation
+## Step 13. Generation
 
 The final step:
 
@@ -449,43 +509,74 @@ What is RAG?
 Then the LLM generates the final answer.
 
 
-Overall Flow
+Code's diagram
 
 ```texgt
 Wikipedia
-     │
-     ▼
-Load
-     │
-     ▼
-Split
-     │
-     ▼
-Embeddings
-     │
-     ▼
+      │
+      ▼
+WebBaseLoader
+      │
+      ▼
+Document
+      │
+      ▼
+RecursiveCharacterTextSplitter
+      │
+      ▼
+Chunks
+      │
+      ▼
+OpenAIEmbeddings
+      │
+      ▼
 Chroma
-     │
-     ▼
+      │
+      ▼
 Retriever
-     │
-     ▼
-Generate 5 Queries
-     │
-     ▼
-Search each query
-     │
-     ▼
-Unique documents
-     │
-     ▼
-Prompt
-     │
-     ▼
+      │
+      ▼
+──────────────────────────────────────
+
+Question
+
+      │
+      ▼
+ChatPromptTemplate
+      │
+      ▼
 LLM
-     │
-     ▼
-Final Answer
+      │
+      ▼
+5 Alternative Questions
+      │
+      ▼
+retriever.map()
+      │
+      ▼
+20 Retrieved Documents
+      │
+      ▼
+get_unique_union()
+      │
+      ▼
+14 Unique Documents
+      │
+      ▼
+RAG Prompt
+      │
+      ▼
+LLM
+      │
+      ▼
+Answer
 ```
 
+## Key Takeaways
 
+- Multi-Query Retrieval improves recall by searching with multiple versions of the user's question.
+- The document collection is indexed only once.
+- Each user question generates several alternative queries.
+- Each query performs an independent similarity search.
+- Retrieved documents are merged and duplicates removed.
+- The final document set is sent to the LLM to generate the answer.
