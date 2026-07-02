@@ -75,7 +75,7 @@ multi_query_prompt = ChatPromptTemplate.from_template(template)
 Here is the template that will use the `question` to create a prompt 
 
 ```python
-question = "What is RAG?"
+question = "How do I build a RAG system?"
 ```
 
 Prompt will become 
@@ -87,7 +87,7 @@ Generate five different versions...
 
 Original question:
 
-What is RAG?
+How do I build a RAG system?"
 ```
 
 ---
