@@ -1,3 +1,27 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Convolutional Neural Networks (CNNs)](#convolutional-neural-networks-cnns)
+  - [CNN Processing Pipeline](#cnn-processing-pipeline)
+  - [1. Input Layer](#1-input-layer)
+  - [2. Convolutional Block](#2-convolutional-block)
+    - [2.1 Convolution operation](#21-convolution-operation)
+      - [2.1.1 Filters / kernels](#211-filters--kernels)
+      - [2.1.2 Stride](#212-stride)
+      - [2.1.3 Padding](#213-padding)
+      - [2.2 Activation](#22-activation)
+      - [2.3 Normalization Layer](#23-normalization-layer)
+      - [2.4 Pooling Layer](#24-pooling-layer)
+        - [Types of Pooling](#types-of-pooling)
+      - [2.5 Dropout Layer](#25-dropout-layer)
+  - [3. Flattening](#3-flattening)
+  - [4. Dense (Fully Connected) Layer](#4-dense-fully-connected-layer)
+  - [5. Output Layer](#5-output-layer)
+  - [Sources](#sources)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Convolutional Neural Networks (CNNs)
 
 ![CNN](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/pic/02-CNN-theory/01-header.webp)

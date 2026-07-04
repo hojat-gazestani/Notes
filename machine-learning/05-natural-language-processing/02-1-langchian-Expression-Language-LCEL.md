@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [**LangChain Expression Language (LCEL)** pipeline](#langchain-expression-language-lcel-pipeline)
+  - [Creating a chain object.](#creating-a-chain-object)
+    - [Step1: Creating a dictionary for the prompt.](#step1-creating-a-dictionary-for-the-prompt)
+    - [Step 2: prompt template](#step-2-prompt-template)
+    - [Step 3: LLM Model](#step-3-llm-model)
+    - [Step 4: Converts the model output into plain text.](#step-4-converts-the-model-output-into-plain-text)
+    - [Final Step](#final-step)
+  - [Equivalent Plain Python](#equivalent-plain-python)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # **LangChain Expression Language (LCEL)** pipeline
 
 ```python
