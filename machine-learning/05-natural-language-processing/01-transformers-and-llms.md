@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [LLM](#llm)
+- [Into to Meta Llama 3.2/3.3](#into-to-meta-llama-3233)
+- [Models benchmark](#models-benchmark)
+- [Transformer](#transformer)
+- [Embedding](#embedding)
+- [Quantization](#quantization)
+- [Quantize length](#quantize-length)
+  - [Why it's important?](#why-its-important)
+  - [Understand by example:](#understand-by-example)
+  - [How it works:](#how-it-works)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## LLM
 
 ​	Large Language Models (LLMs) are sophisticated AI systems designed for proccessing, understanding, and generating human language.

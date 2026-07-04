@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Retrieval-Augmented Generation (RAG)](#retrieval-augmented-generation-rag)
+  - [LangChain](#langchain)
+    - [Step 1: PDF](#step-1-pdf)
+    - [Step 2: Chunking](#step-2-chunking)
+    - [Step 3: Embedding](#step-3-embedding)
+    - [Step 4: Vector Database](#step-4-vector-database)
+    - [Step 5: User Question](#step-5-user-question)
+    - [Step 6: Similarity Search](#step-6-similarity-search)
+    - [Step 7: Retrieval](#step-7-retrieval)
+    - [Step 8: Build the Prompt](#step-8-build-the-prompt)
+    - [Step 9: LLM Generates Answer](#step-9-llm-generates-answer)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Retrieval-Augmented Generation (RAG)
 
 ## LangChain
