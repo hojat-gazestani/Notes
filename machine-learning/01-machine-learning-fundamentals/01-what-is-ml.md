@@ -1,3 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [What is Machine Learning?](#what-is-machine-learning)
+  - [Related Fields](#related-fields)
+    - [Computer Science](#computer-science)
+    - [Data Science](#data-science)
+    - [Artificial Intelligence (AI)](#artificial-intelligence-ai)
+      - [AI Subfields](#ai-subfields)
+  - [Machine Learning](#machine-learning)
+  - [Deep Learning](#deep-learning)
+      - [ML Subfields](#ml-subfields)
+      - [Retrieval-Augmented Generation](#retrieval-augmented-generation)
+        - [Why RAG matters](#why-rag-matters)
+        - [Simple example](#simple-example)
+        - [Common use cases](#common-use-cases)
+      - [LangChain](#langchain)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # What is Machine Learning?
 
 ## Related Fields

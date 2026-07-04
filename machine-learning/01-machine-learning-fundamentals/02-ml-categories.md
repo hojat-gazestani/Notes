@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Machine Learning Categories](#machine-learning-categories)
+  - [1. Supervised Learning](#1-supervised-learning)
+    - [Key Idea](#key-idea)
+    - [Example](#example)
+    - [Common Algorithms](#common-algorithms)
+  - [2. Unsupervised Learning](#2-unsupervised-learning)
+    - [Key Idea](#key-idea-1)
+    - [Example](#example-1)
+    - [Common Algorithm](#common-algorithm)
+  - [3. Reinforcement Learning](#3-reinforcement-learning)
+    - [Key Idea](#key-idea-2)
+    - [Examples](#examples)
+    - [Common Algorithm](#common-algorithm-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Machine Learning Categories
 
 * Supervised Learning

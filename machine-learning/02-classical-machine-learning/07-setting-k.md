@@ -1,3 +1,25 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [What is k in clustering?](#what-is-k-in-clustering)
+- [Elbow method](#elbow-method)
+- [Step 1: Calculate WCSS for k = 1](#step-1-calculate-wcss-for-k--1)
+  - [Compute the Centroid](#compute-the-centroid)
+  - [Calculate Squared Distances](#calculate-squared-distances)
+  - [Compute WCSS](#compute-wcss)
+  - [Step 2: Calculate WCSS for k=2](#step-2-calculate-wcss-for-k2)
+    - [Better clustering:](#better-clustering)
+    - [Try k=2 optimally:](#try-k2-optimally)
+    - [Compute WCSS:](#compute-wcss-1)
+    - [Final Result:](#final-result)
+  - [Step 2: Calculate WCSS for k=2](#step-2-calculate-wcss-for-k2-1)
+    - [Cluster Assignment](#cluster-assignment)
+    - [WCSS Calculation](#wcss-calculation)
+    - [Final Result](#final-result-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # What is k in clustering?
 
 **k** is the **number of clusters** (groups) you want to divide your data into.

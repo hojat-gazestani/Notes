@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CLUSTERING](#clustering)
+  - [supervised learning](#supervised-learning)
+  - [unsupervised learning](#unsupervised-learning)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CLUSTERING
 
 Identify clusters of data that share similar attributes.

@@ -1,3 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Multi-Query Retrieval](#multi-query-retrieval)
+  - [Step 1. Create the LLM](#step-1-create-the-llm)
+  - [Step 2. Create the prompt](#step-2-create-the-prompt)
+  - [Step 3. Download the document](#step-3-download-the-document)
+  - [Step 4. Split the document](#step-4-split-the-document)
+  - [Step 6. Build the vector database](#step-6-build-the-vector-database)
+  - [Step 7. Create a retriever](#step-7-create-a-retriever)
+  - [Step 8. Build the Multi-query chain](#step-8-build-the-multi-query-chain)
+  - [Step 9. User asks a question](#step-9-user-asks-a-question)
+  - [Step 10. Parse](#step-10-parse)
+  - [Step 11. Retriever](#step-11-retriever)
+  - [Step 12. Remove duplicates](#step-12-remove-duplicates)
+  - [Step 13. Generation](#step-13-generation)
+  - [Key Takeaways](#key-takeaways)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Multi-Query Retrieval
 
 Multi-Query Retrieval is a retrieval strategy that improves document retrieval by asking an LLM to generate several alternative versions of the user's question.

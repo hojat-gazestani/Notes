@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [SETTING UP YOUR DATA](#setting-up-your-data)
+  - [Test model performance](#test-model-performance)
+  - [Cross Validation](#cross-validation)
+    - [How Much Data Do I Need?](#how-much-data-do-i-need)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # SETTING UP YOUR DATA
 
 + Training data
