@@ -2,6 +2,8 @@
 
 ## Chapters
 
+* Preface
+
 * Chapter 1 - Machine Learning Fundamentals
 
   * [01-what-is-ml.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/01-machine-learning-fundamentals/01-what-is-ml.md)
@@ -15,33 +17,33 @@
     * (to be added)
 
 * Chapter 2 - Classical Machine Learning
-  * Supervised Learning
-    * Regression
+  * Classical Machine Learning algorithm
+    * Supervised Learning
+      * Regression
         * [01-regression-analysis.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/01-regression-analysis.md)
-    * Classification
-      * [02-logistic-regression.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/02-logistic-regression.md)
-      * [03-support-vector-machines.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/03-support-vector-machines.md)
-      * [04-k-nearest-neighbors.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/04-k-nearest-neighbors.md)
-      * decision-trees
+      * Classification
+        * [02-logistic-regression.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/02-logistic-regression.md)
+        * [03-support-vector-machines.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/03-support-vector-machines.md)
+        * [04-k-nearest-neighbors.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/04-k-nearest-neighbors.md)
         * decision-trees
-        * building-a-decision-tree
-    * Ensemble Learning
-      * boosting
-  * Unsupervised Learning
-    * [05-clustering-introduction.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/05-clustering-introduction.md)
-    * [06-k-means-clustering.md](https://github.com/hojat-gazestani77/Notes/blob/main/machine-learning/02-classical-machine-learning/06-k-means-clustering.md)
-    * 07-setting-k.md
+          * decision-trees
+          * building-a-decision-tree
+      * Ensemble Learning
+        * boosting
+    * Unsupervised Learning
+      * [05-clustering-introduction.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/02-classical-machine-learning/05-clustering-introduction.md)
+      * [06-k-means-clustering.md](https://github.com/hojat-gazestani77/Notes/blob/main/machine-learning/02-classical-machine-learning/06-k-means-clustering.md)
+      * 07-setting-k.md
+  *  Reinforcement Learning
+      * Q-Learning
+      * SARSA
+      * Deep Q Networks (DQN)
+      * Policy Gradient Methods
   * Labs
-
     * (to be added)
 
-* Chapter 3 - Reinforcement Learning
-  * Q-Learning
-  * SARSA
-  * Deep Q Networks (DQN)
-  * Policy Gradient Methods
 
-* Chapter 4 - Neural Networks
+* Chapter 3 - Neural Networks
 
   * [01-neural-networks.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/03-neural-networks/01-neural-networks.md)
   * 02-activation-functions.md
@@ -51,7 +53,7 @@
 
     * (to be added)
 
-* Chapter 5 - Computer Vision
+* Chapter 4 - Computer Vision
 
   * [01-cnn-theory.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/04-computer-visin/02-cnn-theory.md)
   * 02-image-classification.md
@@ -60,7 +62,7 @@
 
     * [Dogs vs Cats CNN](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/CNN)
 
-* Chapter 6 - Natural Language Processing (RAG)
+* Chapter 5 - Natural Language Processing (RAG)
 
   * [01-transformers-and-llms.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/01-transformers-and-llms.md)
   * [02-0-rag-langchian.md](https://github.com/hojat-gazestani/Notes/blob/main/machine-learning/05-natural-language-processing/02-0-rag-langchian.md)
@@ -75,7 +77,7 @@
     * [decomposition](https://github.com/hojat-gazestani/machine-learning-lab/tree/main/rag-systems/decomposition)
     * [Multi-Query Retrieval]()
 
-* Chapter 7 - MLOps
+* Chapter 6 - MLOps
 
   * 01-model-deployment.md
   * 02-model-monitoring.md
