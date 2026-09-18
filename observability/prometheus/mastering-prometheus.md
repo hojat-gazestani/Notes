@@ -73,7 +73,7 @@ count without(job)(http_requests_total){status="401"}
 
 - Prometheus server feature
 
-![feature]()
+![feature](https://github.com/hojat-gazestani/Notes/tree/main/observability)
 
 
 ## App Instrumentation and Metric Guidelines
@@ -129,11 +129,11 @@ Track the distribution of request latency
 
 Or of some other set of numberic values as a percentile or a quantile 
 
-![summeries]()
+![summeries](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/03-summeries2.png)
 
 In instrumentation, specify which quantile you want to calculate along with error
 
-![construction]()
+![construction](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/04-construction.png)
 
 And then track a specific value
 
@@ -158,18 +158,18 @@ use for aggrigaton - samples observations
 
 tracks distributions — not just averages.
 
-![histogram]()
+![histogram](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/06-histograms.png)
 
 Like summeries allow you to track the distributions of the set of numeric values, but instead of printed pre-computed quantiles, it count the input value into a set of ranged packet
 
 Qumulitive: each packet also contains the counts of the previous, lower range bucket
 
-![qumulitive]()
+![qumulitive](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/07-qumulive.png)
 
 
 You have to set up a bucket ranges to the constructore
 
-![construction]()
+![construction](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/08-construction.png)
 
 Ad then you can observe value
 
@@ -178,7 +178,7 @@ requestDuration.Observe(2.3)
 ```
 In the exposition format each histogram bucket is exposed as a single counter series 
 
-![exposition]()
+![exposition](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/09-exposition.png)
 
 Quntailes from histograms
 
@@ -191,15 +191,15 @@ histogram_quatile(
 
 Since the buckets are Counters, you always wrap the rate or increase around histogram bucket
 
-![bcket]()
+![bcket](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/10-bucket-rate.png)
 
 Aggrigate between instances
 
-![aggrigation]()
+![aggrigation](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/11-aggrigation.png)
 
 Average
 
-![average]()
+![average](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/11-average-latencies.png)
 
 
 ### Approaching Instrumentation
