@@ -65,7 +65,7 @@ node_cpu_seconds_total
 rate(node_cpu_seconds_total)[5d]
 ```
 
-![1-DTM]()
+![1-DTM](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/1-DTM-structure.png)
 
 ```promql
 count without(job)(http_requests_total){status="401"}
@@ -73,7 +73,7 @@ count without(job)(http_requests_total){status="401"}
 
 - Prometheus server feature
 
-![feature](https://github.com/hojat-gazestani/Notes/tree/main/observability)
+![feature](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/02-features.png)
 
 
 ## App Instrumentation and Metric Guidelines
