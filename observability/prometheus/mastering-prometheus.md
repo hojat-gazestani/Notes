@@ -257,26 +257,210 @@ Use push gateway
 ```promql
 up{node="kind-worker"}
 up{node!="kind-worker"}
-up{node=~"kind-worker."} # kind-worker1, kind-workder2
-up{node=~"kind-worker.+"} # kind-worker1XXX, kind-workder2XXX
-up{node=~"kind-worker1|2"} # kind-worker1, kind-workder2
+up{node=~"kind-worker."}      # kind-worker1, kind-workder2
+up{node=~"kind-worker.+"}     # kind-worker1XXX, kind-workder2XXX
+up{node=~"kind-worker1|2"}    # kind-worker1, kind-workder2
 
 {job="vmstorage"}
 {job="vmstorage",value!~".+m.+"}
 
+```
+---
 
-![12-query]()
+**e.g.1:**
 
+The metric that I am going to filter 
 
-sum without(job, cluster_name, node) (process_cpu_seconds_total{job!="vminsert"})
+![12-query](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/12-query.png)
 
-![13-query-result]()
+```promql
+sum without(job, cluster_name, node) (
+  process_cpu_seconds_total{job!="vminsert"}
+)
 ```
 
+Total CPU usage per instance
+
+![13-query-result](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/13-query-result.png)
+
+Adding rate for 5 minute
+
+```promql
+sum without(job, cluster_name, node) (
+  rate(process_cpu_seconds_total{job!="vminsert"})[5m]
+)
+```
+
+![13-qeury-result-minuts](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/13-qeury-result-minuts.png)
+
+---
+
+**e.g.2:**
+
+Total CPU usage of all containers combined
+
+```promql
+container_cpu_usage_seconds_total
+
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "cpu": "total",
+          "id": "/kubelet.slice/kubelet-kubepods.slice/kubelet-truncated
+          "image": "registry.k8s.io/pause:3.10",
+          "instance": "kind-control-plane",
+          "job": "kubernetes-cadvisor",
+          "name": "63a45c2b776de7eb0cb775b1f72c85b6833a6e1bd06e288108400d038d582f5d",
+          "namespace": "local-path-storage",
+          "pod": "local-path-provisioner-567f868bf9-s9wrh"
+        },
+        "value": [
+          1789748615,
+          "0.072963"
+
+```
+
+I have container name 
+
+```promql
+sum by (container) (
+  container_cpu_usage_seconds_total
+)
+```
+
+![14-sum-cont-name](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/14-sum-cont-name.png)
+
+But I only need kube containers
+
+```promql
+container_cpu_usage_seconds_total{id=~"/kubelet.slice/.+"}
+```
+
+![15-kube-cont-only](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/15-kube-cont-only.png)
+
+Total CPU usage for all my Kube containers per instance
+The matching instance's containers have consumed a total of the provided number since the counter started not currently usage.
+
+```promql
+sum by (instance) (
+  container_cpu_usage_seconds_total{id=~"/kubelet.slice/.+"}
+)
+```
+
+![16-kube-cpu-per-instance](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/16-kube-cpu-per-instance.png)
+
+For each instance, how many CPU cores were being consumed on average by these kubelet-related containers during the last 5 minutes?
+The `rate` converts the cumulative counter into a CPU consumption rate.
+
+```promql
+sum by (instance) (
+  rate(container_cpu_usage_seconds_total{id=~"/kubelet.slice/.+"})[5m]
+)
+```
+
+![17-kube-cpu-per-instance-rate](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/17-kube-cpu-per-instance-rate.png)
+
+Average CPU usage per node
+
+```promql
+avg by (instance) (
+  rate(container_cpu_usage_seconds_total{id=~"/kubelet.slice/.+"})[5m]
+)
+```
+
+![18-kube-cpu-per-node](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/18-kube-cpu-per-node.png)
+
+And if I need average CPU usage for all node
+
+```promql
+avg( 
+ sum by (instance) (
+    rate(container_memory_max_usage_bytes)[5m]
+  )
+)
+```
+
+![19-kube-cpu-of-node](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/18-kube-cpu-per-node.png)
+
+---
+
+##### max, min, tok k, bottom k, count
+
+Max CPU usage per seconds for the instance in a culster
+
+```promeql
+max(
+  process_cpu_seconds_total{instance=~".+31.+", cluster_name="prometheus-test"}
+)
+```
+
+![20-max-cpu-usage-instance](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/20-max-cpu-usage-instance.png)
 
 
+Largest value of the metric
+
+```promql
+max(go_gc_duration_seconds_sum)
+```
+
+![21-go-grbage-collection](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/21-go-grbage-collection.png)
 
 
+Top 3 go garbage collection
 
+```promql
+topk(
+  3, go_gc_duration_seconds_sum
+)
+```
+
+![22-top-3-go-garbage](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/22-top-3-go-garbage.png)
+
+
+bottom 3 go garbage collection
+
+```promql
+bottomk(
+  3, go_gc_duration_seconds_sum
+)
+```
+
+![23-bottm-3-go-garbage](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/23-bottm-3-go-garbage.png)
+
+---
+
+**count_values**
+
+Imagine:
+
+```promql
+http_requests_total{service="api"}      100
+http_requests_total{service="web"}      50
+http_requests_total{service="worker"}   100
+http_requests_total{service="db"}       50
+```
+
+How many series have each distinct value?
+
+```promql
+count_values("requests", http_requests_total)
+```
+
+result:
+
+```
+requests="100"   2
+requests="50"    2
+```
+
+Because:
+```text
+100 → api
+100 → worker
+
+50 → web
+50 → db
+```
+The new label requests is created from the metric value.
 
 _ Last udate : _
