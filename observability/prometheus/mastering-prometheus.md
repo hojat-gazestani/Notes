@@ -143,7 +143,7 @@ requestDuration.Observe(2.3)
 
 Summery exposition
 
-![exposition]()
+![exposition](https://github.com/hojat-gazestani/Notes/blob/main/observability/prometheus/pics/03-summery-exposion.png)
 
 Invalid quantile aggregation
 ```promql
