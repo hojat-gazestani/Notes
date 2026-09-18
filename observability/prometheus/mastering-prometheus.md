@@ -237,9 +237,41 @@ Use push gateway
 - Duration per stage
 - Job success timestamp
 
+### PROMQL: The PROMetheus Query Language
+
+- Intro to Aggregation
+- HTTP API
+- Without and By Sum and Count
+- Min and Max
+- Topk, Bottomk and Count_values
+- Binary Operators
+- Ignoring, On
+- Or, Unless, And
+- Intro to Functions
+- Sort and Sort_desc
+- Avg, Rate and Irate
+- Driv and Predict_liner
+
+#### Intro to Aggregation
+
+```promql
+up{node="kind-worker"}
+up{node!="kind-worker"}
+up{node=~"kind-worker."} # kind-worker1, kind-workder2
+up{node=~"kind-worker.+"} # kind-worker1XXX, kind-workder2XXX
+up{node=~"kind-worker1|2"} # kind-worker1, kind-workder2
+
+{job="vmstorage"}
+{job="vmstorage",value!~".+m.+"}
 
 
+![12-query]()
 
+
+sum without(job, cluster_name, node) (process_cpu_seconds_total{job!="vminsert"})
+
+![13-query-result]()
+```
 
 
 
