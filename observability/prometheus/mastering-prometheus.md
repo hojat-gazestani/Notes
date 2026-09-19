@@ -463,4 +463,35 @@ Because:
 ```
 The new label requests is created from the metric value.
 
+---
+
+**e.g: max by, max_over_time**
+
+To have current value of the metric for each Job
+
+```promql
+kube_job_status_failed
+```
+
+get Jobs that are currently reporting failed = 1.
+```promql
+kube_job_status_failed == 1
+```
+
+did this Job fail at any point during the last day?
+
+```text
+0 0 0 1 1 1
+        ↑
+      max = 1
+```
+
+gives one result per Job that failed during the last day.
+
+```promql
+max by (namespace, job_name) (
+  max_over_time(kube_job_status_failed[1d])
+) > 0
+```
+---
 _ Last udate : _
