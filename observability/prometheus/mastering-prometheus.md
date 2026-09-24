@@ -35,6 +35,15 @@ Brendon Palmer
 
 ## Principles in Monitoring and How Prometheus Works
 
+```bash
+http://localhost:8481/select/0/vmui/
+http://localhost:8481/metrics
+http://localhost:8429/service-discovery
+
+kubectl port-forward svc/victoria-metrics 8481:8481
+ssh -N -L 8481:localhost:8481 needle
+```
+
 ### Breaking down the Data Shard Anatomy
 
 - Dimensional data model
